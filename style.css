@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Style */
+.font-primary{
+    font-family: "Quicksand", serif;
+
+}
+.flex{
+    display: flex;
+}
+
+.btn{
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 10px 47px ;
+    background: #111111;
+    color: white;
+
+}
+
+/* Navbar */
+
+.navbar{
+    max-width: 1160px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .brand{
+    align-items: center;
+    justify-content: center;
+}
+.navbar .brand .logo-text{
+    font-size: 32px;
+    font-weight: bold;
+    gap: 11px;
+}
+
+.navbar .items{
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.items .nav-item{
+    list-style: none;
+}
+.items .nav-item .nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.home{
+    color: #FEA301;
+    font-weight: 700;
+}
+.about{
+    color: #01ACFD;
+}
+.facilities{
+    color: #05D4DF;
+}
+.admission{
+    color: #5D58EF;
+}
+.nav-btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: #FEA301;
+}
+#nav-bars{
+    display: none;
+}
+/* Banner  */
+.banner{
+    max-width: 1160px;
+    margin: 20px auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-text{
+    max-width: 640px;
+    flex-direction: column;
+    align-items: start;
+    justify-self: center;
+    gap: 24px;
+}
+.banner-title{
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+#Empowering{
+    color: #FEA301;
+}
+#vision{
+    color: #01ACFD;
+}
+.banner-desc{
+    font-size: 1.25rem;
+}
+
+/* Main Body Style */
+
+.carriculum{
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url(assets/bg.png);
+}
+.container{
+    /* background-color: antiquewhite; */
+    /* max-width: 1160px; */
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 60px 0;
+}
+.carriculum-title{
+    font-size: 2.87rem;
+    font-weight: bold;
+}
+
+.cards{
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    
+}
+.cards .card{
+    max-width: 368px;
+    height: 475px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 19px;
+    /* border: 1px solid red; */
+
+}
+.card .card-title{
+    font-size: 1.53rem;
+    font-weight: 700;
+
+}
+.card .card-desc{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.kinder-card{
+    background: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+    border: 1px solid #DEF5FF;
+}
+
+
+
+
+
+.arrows{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.arrow{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #FEA301;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    /* Mobile Navbar */
+    .navbar{
+        border-bottom: 1px solid #FEA301;
+        padding: 12px 16px;
+        margin: 0;
+    }
+
+    .nav-btn,.logo-text,.items{
+        display: none;
+    }
+    #nav-bars{
+        display: block;
+        font-size: 1.5rem;
+    }
+    /* Mobile Banner */
+    .banner{
+        flex-direction: column-reverse;
+        padding: 16px;
+        margin-top: 0;
+        gap: 20px;
+    }
+    .banner-text{
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+    .hero-kid-image{
+        width: 100%;
+    }
+    .banner-desc{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    
+    
+   
+    
+    
+    
+    
+}
