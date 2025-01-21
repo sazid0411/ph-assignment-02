@@ -1,76 +1,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-/* Shared Style */
-.font-primary{
-    font-family: "Quicksand", serif;
-
+body {
+    /* background-color: #F7F7F7; */
 }
-.flex{
+
+/* Shared Style */
+.font-primary {
+    font-family: "Quicksand", serif;
+}
+
+.flex {
     display: flex;
 }
 
-.btn{
+.btn {
     font-size: 1.25rem;
     font-weight: 700;
     border-radius: 12px;
-    padding: 10px 47px ;
+    padding: 10px 47px;
     background: #111111;
     color: white;
+    border: none;
 
 }
 
 /* Navbar */
 
-.navbar{
+.navbar {
     max-width: 1160px;
     margin: 20px auto;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .brand{
+
+.navbar .brand {
     align-items: center;
     justify-content: center;
 }
-.navbar .brand .logo-text{
+
+.navbar .brand .logo-text {
     font-size: 32px;
     font-weight: bold;
     gap: 11px;
 }
 
-.navbar .items{
+.navbar .items {
     align-items: center;
     justify-content: center;
     gap: 32px;
 }
 
-.items .nav-item{
+.items .nav-item {
     list-style: none;
 }
-.items .nav-item .nav-link{
+
+.items .nav-item .nav-link {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
 }
-.home{
+
+.home {
     color: #FEA301;
     font-weight: 700;
 }
-.about{
+
+.about {
     color: #01ACFD;
 }
-.facilities{
+
+.facilities {
     color: #05D4DF;
 }
-.admission{
+
+.admission {
     color: #5D58EF;
 }
-.nav-btn{
+
+.nav-btn {
     font-size: 1.25rem;
     font-weight: 600;
     padding: 10px 60px;
@@ -79,47 +92,58 @@
     color: white;
     background-color: #FEA301;
 }
-#nav-bars{
+
+#nav-bars {
     display: none;
 }
+
 /* Banner  */
-.banner{
+.banner {
     max-width: 1160px;
     margin: 20px auto 0 auto;
     align-items: center;
     justify-content: space-between;
 }
-.banner-text{
+
+.banner-text {
     max-width: 640px;
     flex-direction: column;
     align-items: start;
     justify-self: center;
     gap: 24px;
 }
-.banner-title{
+
+.banner-title {
     font-size: 3.6rem;
     font-weight: bold;
 }
-#Empowering{
+
+#Empowering {
     color: #FEA301;
 }
-#vision{
+
+#vision {
     color: #01ACFD;
 }
-.banner-desc{
+
+.banner-desc {
     font-size: 1.25rem;
 }
 
 /* Main Body Style */
 
-.carriculum{
+/*  Sections  */
+.carriculum {
     margin: 0 auto;
     max-width: 1440px;
     background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
 }
-.container{
+
+/* Curriculum Section */
+.container {
     /* background-color: antiquewhite; */
-    /* max-width: 1160px; */
+    max-width: 1160px;
     margin: 0 auto;
     flex-direction: column;
     align-items: center;
@@ -127,18 +151,21 @@
     gap: 5rem;
     padding: 60px 0;
 }
-.carriculum-title{
+
+.carriculum-title,
+.stories-title {
     font-size: 2.87rem;
     font-weight: bold;
 }
 
-.cards{
+.cards {
     align-items: center;
     justify-content: center;
     gap: 29px;
-    
+
 }
-.cards .card{
+
+.cards .card {
     max-width: 368px;
     height: 475px;
     flex-direction: column;
@@ -147,34 +174,65 @@
     justify-content: center;
     gap: 2rem;
     border-radius: 19px;
-    /* border: 1px solid red; */
-
+    background-color: white;
 }
-.card .card-title{
+
+.card .card-title {
     font-size: 1.53rem;
     font-weight: 700;
 
 }
-.card .card-desc{
+
+.card .card-desc {
     font-size: 1rem;
     font-weight: 500;
+    line-height: 28px;
+    color: #808080;
+    font-family: "Raleway", serif;
+    padding: 0 20px;
 }
-.kinder-card{
-    background: linear-gradient(rgba(222, 245, 255, 1),rgba(255, 255, 255, 0));
+
+.kinder-card {
+    background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
     border: 1px solid #DEF5FF;
 }
 
+.elementary-card {
+    background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
+    border: 1px solid #FFF4DC;
+}
 
+.middle-card {
 
+    background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
+    border: 1px solid #F2E8FF;
+}
 
+.kinder-read-more {
+    color: #64C8FF;
+    font-weight: bold;
 
-.arrows{
+}
+
+.elementary-read-more {
+    color: #F0AA00;
+    font-weight: bold;
+}
+
+.middle-read-more {
+    color: #8700FF;
+    font-weight: bold;
+
+}
+
+.arrows {
     align-items: center;
     justify-content: center;
     gap: 10px;
 
 }
-.arrow{
+
+.arrow {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -185,6 +243,114 @@
     font-size: 1.5rem;
 }
 
+/* Stories Section */
+.stories {
+
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 1),
+            rgba(254, 163, 1, .2)), url('assets/bg.png');
+
+}
+
+
+.stories-cards {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.single-card {
+    height: 630px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.single-card>img {
+    border-radius: 16px 16px 0 0;
+}
+
+
+
+.texts {
+    margin-bottom: 35px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+    padding: 0 38px;
+
+}
+
+.single-title {
+    font-size: 1.5rem;
+
+}
+
+.single-desc {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666666;
+    font-family: "Raleway", serif;
+    line-height: 28px;
+}
+
+
+
+
+.btns {
+    width: 100%;
+    position: relative;
+}
+
+.stories-btn {
+    position: absolute;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 3rem;
+    border: none;
+    background-color: #3CD8E8;
+    left: 40px;
+    top: -60px;
+}
+
+.multi {
+    left: 40px;
+    top: -45px;
+
+}
+
+.multiple-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stories-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 28px;
+    border-radius: 16px;
+}
+
+.stories-card>img {
+    border-radius: 16px 16px 0 0;
+}
+
+.stories-card>h2 {
+    padding: 0 38px 28px 38px;
+    font-size: 1rem;
+
+}
+
 
 
 
@@ -193,47 +359,116 @@
 
 
 @media screen and (max-width:576px) {
+
     /* Mobile Navbar */
-    .navbar{
+    .navbar {
         border-bottom: 1px solid #FEA301;
         padding: 12px 16px;
         margin: 0;
     }
 
-    .nav-btn,.logo-text,.items{
+    .nav-btn,
+    .logo-text,
+    .items {
         display: none;
     }
-    #nav-bars{
+
+    #nav-bars {
         display: block;
         font-size: 1.5rem;
     }
+
     /* Mobile Banner */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         padding: 16px;
         margin-top: 0;
         gap: 20px;
     }
-    .banner-text{
+
+    .banner-text {
         align-items: center;
         text-align: center;
         gap: 18px;
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 2rem;
     }
-    .hero-kid-image{
+
+    .hero-kid-image {
         width: 100%;
     }
-    .banner-desc{
+
+    .banner-desc {
         font-size: 1rem;
         font-weight: 500;
     }
-    
-    
-   
-    
-    
-    
-    
+
+
+    /* Main  */
+
+    /* Curriculum */
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carriculum-title,.stories-title {
+        font-size: 1.53rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    /*  */
+    .container{
+        /* padding-top: 0; */
+        gap: 20px;
+    }
+    .stories-container{
+        padding-top: 0;
+    }
+
+    .single-card {
+        display: none;
+    }
+
+    .stories-btn {
+        font-size: .6rem;
+        padding: 5px 11px;
+    }
+
+    .multi {
+        left: 10px;
+        top: -39px;
+
+    }
+
+    .multiple-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .stories-card {
+      max-width: 173px;
+    }
+
+    .stories-card>img {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .stories-card>h2 {
+        padding: 0 0px 20px 22px;
+        font-size: .6rem;
+
+    }
+
 }
