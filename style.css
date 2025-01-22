@@ -97,6 +97,19 @@ body {
     display: none;
 }
 
+/*  */
+
+.marquee{
+    max-width: 1440px ;
+    margin: 0 auto;
+}
+
+.marquee .text-mark{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #666666;
+    
+} 
 /* Banner  */
 .banner {
     max-width: 1160px;
@@ -274,7 +287,9 @@ body {
 .single-card>img {
     border-radius: 16px 16px 0 0;
 }
-
+marquee{
+    padding: 30px;
+}
 
 
 .texts {
