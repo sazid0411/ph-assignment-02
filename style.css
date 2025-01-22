@@ -102,6 +102,7 @@ body {
 .marquee{
     max-width: 1440px ;
     margin: 0 auto;
+    padding: 20px 10px;
 }
 
 .marquee .text-mark{
@@ -188,6 +189,7 @@ body {
     gap: 2rem;
     border-radius: 19px;
     background-color: white;
+    box-shadow: 0 0 29px rgba(0, 0, 0, 0.05);
 }
 
 .card .card-title {
@@ -207,34 +209,37 @@ body {
 
 .kinder-card {
     background: linear-gradient(rgba(222, 245, 255, 1), rgba(255, 255, 255, 0));
-    border: 1px solid #DEF5FF;
+    border: 2px solid #DEF5FF;
 }
 
 .elementary-card {
     background: linear-gradient(rgba(255, 244, 220, 1), rgba(255, 255, 255, 0));
-    border: 1px solid #FFF4DC;
+    border: 2px solid #FFF4DC;
 }
 
 .middle-card {
 
     background: linear-gradient(rgba(238, 225, 255, 1), rgba(255, 255, 255, 0));
-    border: 1px solid #F2E8FF;
+    border: 2px solid #F2E8FF;
 }
 
-.kinder-read-more {
+.kinder-read-more >a{
     color: #64C8FF;
     font-weight: bold;
+    text-decoration: none;
 
 }
 
-.elementary-read-more {
+.elementary-read-more >a{
     color: #F0AA00;
     font-weight: bold;
+    text-decoration: none;
 }
 
-.middle-read-more {
+.middle-read-more > a{
     color: #8700FF;
     font-weight: bold;
+    text-decoration: none;
 
 }
 
@@ -254,6 +259,10 @@ body {
     justify-content: center;
     color: white;
     font-size: 1.5rem;
+}
+
+.arrow:hover{
+    background-color: rgba(250, 160, 20, .7);
 }
 
 /* Stories Section */
@@ -286,9 +295,6 @@ body {
 
 .single-card>img {
     border-radius: 16px 16px 0 0;
-}
-marquee{
-    padding: 30px;
 }
 
 
@@ -324,6 +330,7 @@ marquee{
 }
 
 .stories-btn {
+    font-family: "Raleway", serif;
     position: absolute;
     font-size: 1rem;
     color: white;
@@ -546,7 +553,7 @@ marquee{
     }
 
     .stories-card {
-        max-width: 173px;
+        max-width: 174px;
         gap: 10px;
     }
 
